@@ -6,7 +6,7 @@ provider "aws" {
 
 resource "aws_instance" "ec2-docker" {
   
-  ami = ami-08d59269edddde222
+  ami = "ami-08d59269edddde222"
   instance_type = "t3micro"
   key_name = "rr-rushi-singapore"
   root_block_device {
