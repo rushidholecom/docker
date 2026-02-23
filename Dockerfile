@@ -2,7 +2,7 @@ FROM ubuntu
 
 LABEL name ="rushi"
 
-RUN apt update && apt install openjdk-17-jdk -y && apt install maven -y
+RUN apt update && apt install openjdk-17-jdk git maven -y
 
 WORKDIR /mnt
 
