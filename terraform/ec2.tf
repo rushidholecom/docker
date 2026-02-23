@@ -12,7 +12,7 @@ resource "aws_instance" "ec2-docker" {
   root_block_device {
     volume_size = 20
   }
-  vpc_security_group_ids = ["sg-0afd97e579140952f"]
+  vpc_security_group_ids = ["sg-0787e67583992f1dc"]
   tags = {
     Name = "terraform-prac"
   }
