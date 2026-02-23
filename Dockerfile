@@ -10,8 +10,8 @@ RUN git clone https://github.com/shubhamkalsait/EasyCRUD.git
 
 WORKDIR EasyCRUD/backend
 
-RUN mvn clean package -DskipTest
-
 COPY application.proprties src/main/resources/application.properties
+
+RUN mvn clean package -DskipTest
 
 ENTRYPOINT ["java", "-jar", "target/student-registration-backend-0.0.1-SNAPSHOT.jar"]
