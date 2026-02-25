@@ -17,3 +17,4 @@ resource "aws_instance" "ec2-docker" {
     Name = "terraform-prac"
   }
 }
+
